@@ -66,7 +66,7 @@ const passportJwt = (passport) => {
 const ProjectsRoutes = require('./routes/ProjectsRoutes');
 const FeedsRoutes = require('./routes/FeedsRoutes.js');
 const UsersRoutes = require('./routes/UsersRoutes');
-// const EmailsRoutes = require('./routes/EmailsRoutes');
+const EmailsRoutes = require('./routes/EmailsRoutes');
 
 // Creating server object
 
@@ -123,10 +123,10 @@ server.use(
     UsersRoutes
 );
 
-// server.use(
-//     '/emails', 
-//     EmailsRoutes
-// );
+server.use(
+    '/emails', 
+    EmailsRoutes
+);
 
 // Creating route for the landing page
 
