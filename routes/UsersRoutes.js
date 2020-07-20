@@ -2,7 +2,8 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const secret = "s3cr3t100";
+require('dotenv').config();
+const secret = process.env.SECRET;
 
 const UsersModel = require("../models/UsersModel");
 
