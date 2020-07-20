@@ -90,7 +90,7 @@ passportJwt(passport);
 
 // Database connection URL
 
-const dbURL = "mongodb+srv://aaron:1stCopyright@cluster0.d3tqv.mongodb.net/test?retryWrites=true&w=majority";
+const dbURL = process.env.DB_URL;
 
 mongoose.connect(
     dbURL,
